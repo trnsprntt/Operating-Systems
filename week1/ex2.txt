@@ -1,0 +1,82 @@
+    1  apt-get install git
+    2  sudo apt-get install git
+    3  sudo apt-get install git -y
+    4  git --version
+    5  git config --global space user.name "trnsprntt"
+    6  git config --global user.name "trnsprntt"
+    7  git config --global user.email "olya.chernukhina@gmail.com"
+    8  git config --list
+    9  pwd
+   10  ls -al
+   11  gedit .gitconfig
+   12  nano .gitconfig
+   13  clear
+   14  mkdir operating-systems
+   15  cd operating-systems
+   16  mkdir week1
+   17  git clone https://github.com/trnsprntt/Operating-Systems.git
+   18  ls
+   19  rmdir week1
+   20  ls
+   21  cd operating-systems
+   22  cd Operating-Systems/
+   23  mkdir week1
+   24  cd week1
+   25  touch ex1.txt
+   26  cd ..
+   27  cd usr
+   28  cd bin
+   29  ls | sort -r | grap gcc
+   30  ls | sort -r | grep gcc
+   31  ls | sort -r | grep gcc /usr/bin
+   32  ls | sort -r > ~/week1/ex1.txt
+   33  cd ~/week1
+   34  cd operating-systems
+   35  cd Operating-Systems
+   36  cd week1
+   37  nano ex1.txt
+   38  ls | sort | grep gcc 
+   39  ls | sort | grep gcc ex1.txt
+   40  cd /usr/bin
+   41  ls | eort -r > ~/operating-systems/Operating-Systems/week1/ex1.txt
+   42  ls | sort -r > ~/operating-systems/Operating-Systems/week1/ex1.txt
+   43  cd ~/week1
+   44  cd ..
+   45  ды
+   46* ls 
+   47  cd operating-systems
+   48  cd /Operating-Systems/week1
+   49  cd Operating-Systems/week1
+   50  nano ex1.txt
+   51  cd /usr/bin
+   52  ls | sort -r | grep d 
+   53  cd operating-systems
+   54  cd ..
+   55  cd //
+   56  cd ..
+   57  home
+   58  cd
+   59  cd operating-systems/
+   60  cd Operating-Systems/
+   61  cd week1/
+   62  nano ex1/txt
+   63  rm ex1/txt
+   64  rm ex1
+   65  rm ex1.txt
+   66  ls
+   67  clear
+   68  cd ..
+   69  rm week1
+   70  rmdir week1
+   71  clear
+   72  mkdir week1
+   73  cd week1
+   74  touch ex1.txt
+   75  cd /usr/bin
+   76  ls | sort -r | grep pat
+   77  ls | sort -r | grep pat > ~/operating-systems/Operating-Systems/week1/ex1.txt
+   78  cd ..
+   79  cd 
+   80  cd operating-systems/Operating-Systems/week1/
+   81  touch ex2.txt
+   82  history > ex2.txt
