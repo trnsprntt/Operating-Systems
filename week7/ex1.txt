@@ -1,0 +1,2 @@
+   text    data     bss     dec     hex filename
+   2171     632       8    2811     afb a.out
