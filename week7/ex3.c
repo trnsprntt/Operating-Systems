@@ -17,10 +17,6 @@ int main(){
 
 	//Create a new array of n1 ints
 	int* a1 = malloc(n1*sizeof(int)); /* Fill in*/
-	for (int i = 0; i < n1; ++i)
-	{
-		printf("%d ", a1[i]);
-	}
 	int i;
 	for(i=0; i<n1; i++){
 		//Set each value in a1 to 100
@@ -37,6 +33,11 @@ int main(){
 	a1 = malloc(n2*sizeof(int));/* Fill in*/
 
 	//If the new array is a larger size, set all new members to 0. Reason: dont want to use uninitialized variables.
+  if (n2>n1){
+    for(int i=n1;i<n2;i++){
+      a1[i]=0;
+    }
+  }
 
 	for(i=0; i<n2;i++){
 		//Print each element out (to make sure things look right)
@@ -44,7 +45,7 @@ int main(){
 	}
 	printf("\n");
 
-	//Done with array now
+	//Done with array now, done with program :D
 
 	return 0;
 }
