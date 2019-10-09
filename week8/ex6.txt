@@ -1,0 +1,3 @@
+Virtual address size: 16 bit
+Page size: 8 KB = 8192 B = 2^13 Byte
+Number of entries that is needed for a single-level linear page table = 2^offset = 2^(16-log_2_pagesize) = 8.

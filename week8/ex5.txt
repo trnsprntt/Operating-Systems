@@ -1,0 +1,6 @@
+Virtual addresses form the virtual address space, which is an abstraction of physical memory and disk. 
+Physical address refers directly to physical memory. 
+
+Computers that don't have virtual memory refer a virtual address directly to the physical memory with the same address. 
+Computers with virtual memory have "a function" that
+for each virtual address provides its corresponding physical address (in main memory or on disk).
