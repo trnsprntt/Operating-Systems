@@ -1,8 +1,0 @@
--rw-r--r-- 1 trnsprntt trnsprntt 0 Oct 24 23:03 _ex3.txt
--rwxr--rwx 1 trnsprntt trnsprntt 0 Oct 24 23:03 _ex3.txt
--rwxrwxrwx 1 trnsprntt trnsprntt 0 Oct 24 23:03 _ex3.txt
-
-777 means that ex3.txt has all permissions for everyone
-775 means that ex3.txt has read, write, execute permissions for everyone escept write for others
-660 means that ex3.txt has read, write permissions for user, the same for group and nothing for others
-
