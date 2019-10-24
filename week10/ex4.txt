@@ -1,0 +1,8 @@
+File file1
+ 2 links:
+./tmp/file1
+./tmplink1
+File link1
+ 2 links:
+./tmp/file1
+./tmp/link1
