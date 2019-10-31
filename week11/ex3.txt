@@ -1,0 +1,5 @@
+In the first code example the same buffer is used by parent and child processes,
+so when new line character is met during the execution, data from the buffer is written to output stream in parallel.
+
+In the second case: since new line character is included in the first printf instruction, data from the buffer
+is written to the output stream immediately. So, when the process forks, the buffer would be empty.
