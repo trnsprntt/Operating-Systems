@@ -1,0 +1,52 @@
+WITHOUT O_SYNC AND WITH STANDART DBUF_SIZE
+
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ gcc copy.c
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ time ./a.out ex3_1.txt ex3_2.txt
+
+real    0m0.019s
+user    0m0.000s
+sys     0m0.000s
+
+
+
+
+
+WITHOUT O_SYNC AND WITH INCREASED (64 BYTES) DBUF_SIZE 
+
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ gcc copy.c -DBUF_SIZE=64
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ time ./a.out ex3_1.txt ex3_2.txt
+
+real    0m0.015s
+user    0m0.000s
+sys     0m0.000s
+
+
+
+
+
+WITH O_SYNC AND WITH STANDART DBUF_SIZE
+
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ gcc copy.c
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ time ./a.out ex3_1.txt ex3_2.txt
+
+real    0m0.020s
+user    0m0.000s
+sys     0m0.000s
+
+
+
+
+
+WITH O_SYNC AND WITH INCREASED (64 BYTES) DBUF_SIZE
+
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ gcc copy.c -DBUF_SIZE=64
+trnsprntt@LAPTOP-VEFVHHQG:/mnt/d/itp/f19/week12$ time ./a.out ex3_1.txt ex3_2.txt
+
+real    0m0.013s
+user    0m0.000s
+sys     0m0.016s
+
+
+It works faster without O_SYNC. There is no waiting for the end of the previous system call.
+As the buffer size increases, the speed increases, because we need to make fewer system calls 
+and more information fit into one record, therefore fewer traps occur.
